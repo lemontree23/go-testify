@@ -23,7 +23,7 @@ func TestMainHandlerWhenCountMoreThanTotal(t *testing.T) {
 
 	// код 200
 	require.Equal(t, responseRecorder.Code, http.StatusOK)
-	// Возвращает все доступные кафе
+	// возвращает все доступные кафе
 	assert.Len(t, cafeTestList, totalCount)
 }
 
